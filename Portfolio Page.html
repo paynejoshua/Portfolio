@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="stylesheet.css">
+  <title>Portfolio</title>
+</head>
+
+<body>
+
+  <section>
+    <header class="intro">
+      <h1>Josh Payne</h1>
+      <p>Thank you for taking the time to look through some of my projects.</p>
+      <p>Should you have any questions, feel free to reach out to me at paynejoshua1@gmail.com</p>
+    </header>
+
+    <div class="cards">
+      <div class="flip-card resume">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <div class="nameTitle">
+              <h1>Josh Payne</h1>
+              <p>Full Stack Web Developer</p>
+              <p>Resume</p>
+            </div>
+          </div>
+          <div class="flip-card-back">
+            <img src="./assets/Screen Shot 2020-08-19 at 11.34.14 AM.jpeg" id="resume" class="resume" alt="Resume">
+          </div>
+        </div>
+      </div>
+
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <div class="projectFront">
+              <div class="projectTitle">
+                <h1>Projects</h1>
+                <p>Check out some of my projects</p>
+              </div>
+            </div>
+          </div>
+          <div class="flip-card-back">
+            <div class="backPics">
+              <img src="./assets/calendar.jpeg" alt="calendar image" class="projectPicBack project" id="calendarApp">
+              <img src="./assets/password-generator.jpeg" alt="password generator image" class="projectPicBack project" id="pwdGen">
+              <img src="./assets/petStarter.jpeg" alt="petStarter image" class="projectPicBack project" id="petStarter">
+            </div>
+            <div class="projectLinks">
+              <p class="project projectName" id="calendarApp">Calendar App</p>
+              <p class="project projectName" id="pwdGen">Password Generator</p>
+              <p class="project projectName" id="petStarter">PetStarter</p>
+            </div>
+            <div class="modal" id="projectModal">
+              <div class="modal-content">
+                <span class="close" id="close">&times;</span>
+                <a href="" id="repo" class="repo">Repository</a>
+                <a href="" id="deployed" class="deployed">Deployed</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flip-card social">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <h1 class="socialTitle">Social Media</h1>
+        </div>
+        <div class="flip-card-back">
+          <div class="socialPic">
+            <img src="./assets/image.jpg" alt="profile-pic" style="height:100px;width:75px;">
+            <div class="socialLinks">
+              <div class="linkedIn">
+                <a href="https://www.linkedin.com/in/josh-payne-5435a41a6/" target="_blank">LinkedIn</a>
+              </div>
+              <div class="gitHub">
+                <a href="https://github.com/paynejoshua" target="_blank">GitHub</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="script.js"></script>
+
+</body>
+
+</html>
