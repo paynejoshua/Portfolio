@@ -82,9 +82,6 @@ body {
     overflow-y: scroll;
   }
 
- body ::-webkit-scrollbar-thumb {
-    background-color: green;
-  }
 
 /* Resume Card */
 .profilePic {
