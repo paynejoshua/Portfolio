@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="stylesheet.css">
+  <link rel="stylesheet" href="public/assets/css/stylesheet.css">
   <title>Portfolio</title>
 </head>
 
@@ -28,7 +28,7 @@
             </div>
           </div>
           <div class="flip-card-back">
-            <img src="./assets/Screen Shot 2020-08-19 at 11.34.14 AM.jpeg" id="resume" class="resume" alt="Resume">
+            <img src="public/assets/images/resumeImage.jpeg" id="resume" class="resume" alt="Resume">
           </div>
         </div>
       </div>
@@ -44,16 +44,19 @@
               </div>
             </div>
           </div>
-          <div class="flip-card-back">
+
+          
+          <div class="flip-card-back projectContainer">
+          <script id="project-template" type="text/x-handlebars-template">
             <div class="backPics">
-              <img src="./assets/calendar.jpeg" alt="calendar image" class="projectPicBack project" id="calendarApp">
-              <img src="./assets/password-generator.jpeg" alt="password generator image" class="projectPicBack project" id="pwdGen">
-              <img src="./assets/petStarter.jpeg" alt="petStarter image" class="projectPicBack project" id="petStarter">
+            {{#each projects}}
+              <img src="{{img}}" alt="{{alt}}" class="projectPicBack project" id="{{id}}">
+            {{/each}}
             </div>
             <div class="projectLinks">
-              <p class="project projectName" id="calendarApp">Calendar App</p>
-              <p class="project projectName" id="pwdGen">Password Generator</p>
-              <p class="project projectName" id="petStarter">PetStarter</p>
+              {{#each projects}}
+              <p class="project projectName" id="{{id}}">{{name}}</p>
+              {{/each}}
             </div>
             <div class="modal" id="projectModal">
               <div class="modal-content">
@@ -62,6 +65,7 @@
                 <a href="" id="deployed" class="deployed">Deployed</a>
               </div>
             </div>
+        </script>
           </div>
         </div>
       </div>
@@ -73,7 +77,7 @@
         </div>
         <div class="flip-card-back">
           <div class="socialPic">
-            <img src="./assets/image.jpg" alt="profile-pic" style="height:100px;width:75px;">
+            <img src="public/assets/images/profileImage.jpg" alt="profile-pic" style="height:100px;width:75px;">
             <div class="socialLinks">
               <div class="linkedIn">
                 <a href="https://www.linkedin.com/in/josh-payne-5435a41a6/" target="_blank">LinkedIn</a>
@@ -88,7 +92,8 @@
     </div>
   </section>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="script.js"></script>
+  <script src="public/assets/js/script.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
 
 </body>
 
