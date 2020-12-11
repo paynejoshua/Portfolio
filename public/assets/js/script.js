@@ -27,7 +27,7 @@ let portfolio = {
 {
   "name": "Mythos",
   "repo": "https://github.com/wkcodes/Mythos",
-  "deployed": "https://myth0s.herokuapp.com/profile",
+  "deployed": "https://myth0s.herokuapp.com",
   "img": "public/assets/images/mythosImage.png",
   "alt": "image for my project 2 website",
   "id": "project4"
@@ -57,10 +57,11 @@ $(".project").on("click", function(){
 let modal = document.getElementById("projectModal")
   
 modal.style.display = "block";
+ 
+  let project = portfolio.projects.find(project => project.id === this.id)
+ 
 
-  let project = portfolio.projects.find(project => project.id = this.id)
-
-  console.log(project)
+  console.log("project", project)
 
   if (project) {
     console.log($("#repo"))
