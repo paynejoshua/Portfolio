@@ -10,7 +10,7 @@ let portfolio = {
 },
 {
   "name": "Password Generator",
-  "repo": "https://paynejoshua.github.io/Password-Generator/",
+  "repo": "https://github.com/paynejoshua/Password-Generator",
   "deployed": "https://paynejoshua.github.io/Password-Generator/",
   "img": "public/assets/images/password-generator.jpeg",
   "alt": "password generator image",
