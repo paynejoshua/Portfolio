@@ -17,14 +17,6 @@ let portfolio = {
   "id": "project2"
 },
 {
-  "name": "Pet Starter",
-  "repo": "https://github.com/paynejoshua/PetStarter",
-  "deployed": "https://paynejoshua.github.io/PetStarter/",
-  "img": "public/assets/images/petStarter.jpeg",
-  "alt": "pet starter website image",
-  "id": "project3"
-},
-{
   "name": "Mythos",
   "repo": "https://github.com/wkcodes/Mythos",
   "deployed": "https://myth0s.herokuapp.com",
@@ -48,7 +40,7 @@ $(document).ready(function(){
 
 
 $("#resume").on("click", function() {
-    window.open("https://drive.google.com/file/d/1DY2Te_Y7N8syEMzCduqbtdSzj7tNWFWI/view?usp=sharing", "_blank");
+    window.open("https://docs.google.com/document/d/1njO9LcXMDDmRwcjF2THOLddjYfqP65ALpfEJ_u13B1A/edit?usp=sharing", "_blank");
 })
 
 
