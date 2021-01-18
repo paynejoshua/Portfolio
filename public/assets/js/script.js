@@ -1,9 +1,9 @@
 let portfolio = {
   "projects":[
   {
-  "name": "Calendar App",
+  "name": "Work Day Scheduler",
   "repo": "https://github.com/paynejoshua/Calendar",
-  "deployed": "https://paynejoshua.github.io/Calendar/",
+  "deployed": "https://paynejoshua.github.io/Work-Day-Scheduler/",
   "img": "public/assets/images/calendar.jpeg",
   "alt": "calendar image",
   "id": "project1"
