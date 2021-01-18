@@ -78,6 +78,7 @@ body {
     color: white;
     transform: rotateY(180deg);
     border-radius: 20%;
+    overflow: scroll;
   }
 
 
