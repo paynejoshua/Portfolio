@@ -28,7 +28,7 @@ let portfolio = {
   "name": "Employee-Directory",
   "repo": "https://github.com/paynejoshua/Employee-Directory",
   "deployed": "https://desolate-falls-74318.herokuapp.com/",
-  "img": "public/assets/image/EmployeeDirectoryImg.png",
+  "img": "public/assets/images/EmployeeDirectoryImg.png",
   "alt": "Employee Directory Image",
   "id": "project4"
 }
